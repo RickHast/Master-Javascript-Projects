@@ -1,0 +1,32 @@
+# To-Do List App
+
+Une liste de tâches simple avec persistance des données, réalisée en JavaScript vanilla dans le cadre de mon apprentissage du développement front-end.
+
+## Fonctionnalités
+
+- Ajouter une nouvelle tâche
+- Marquer une tâche comme terminée (affichage barré)
+- Supprimer une tâche
+- Filtrer les tâches : toutes / actives / terminées (le filtre choisi est mémorisé)
+- Compteur de tâches restantes
+- Persistance des données via `localStorage` : les tâches restent après rechargement de la page
+- Validation de saisie (pas de tâche vide, pas de doublon)
+
+## Notions travaillées
+
+- Manipulation du DOM : création et insertion dynamique d'éléments (`createElement`, `appendChild`)
+- `localStorage` : sauvegarde et lecture de données persistantes (`JSON.stringify` / `JSON.parse`)
+- Gestion d'événements : `submit`, `click`, `change`
+- Bonnes pratiques : factorisation du code (principe DRY), validation des entrées utilisateur
+
+## Aperçu
+
+
+
+## Technologies
+
+HTML / CSS / JavaScript vanilla — aucune dépendance externe
+
+## Ce que j'ai appris
+
+Ce projet m'a permis de bien comprendre comment garder une seule "source de vérité" (le tableau de tâches) et redessiner l'interface à partir de cet état, plutôt que de manipuler le DOM de façon dispersée. J'ai aussi appris que `.trim()` ne modifie pas une chaîne sur place — les strings sont immuables en JavaScript.

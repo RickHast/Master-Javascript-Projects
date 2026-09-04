@@ -23,6 +23,7 @@ async function getLatLongData (cityName) {
         errorMessage(`it be impossible for us to get some information about this city.
             Verify the city name and retry please`)
         verifyWeatherInfo()
+        return "no"
     }
 
 }
@@ -69,6 +70,7 @@ async function getWeatherInfo(cityLatLong, cityName) {
         errorMessage(`it be impossible for us to get some information about this city.
             Can you try with other city name?`)
         verifyWeatherInfo()
+        return 'no'
     }
 }
 
@@ -83,13 +85,14 @@ const meteoRequest = async function (cityName) {
     
     const cityLatLong = await getLatLongData(cityName)
 
-    if (cityLatLong !== undefined) {
-        const weatherInfo = await getWeatherInfo(cityLatLong, cityName)
-        if (weatherInfo !== undefined) {
-            saveLastWeatherInfo(weatherInfo)
-        }
-    }
+    if (cityLatLong === 'no') return 'no'
+
+    const weatherInfo = await getWeatherInfo(cityLatLong, cityName)
+    if (weatherInfo === 'no') return 'no'
+
+    saveLastWeatherInfo(weatherInfo)
     verifyWeatherInfo()
+    return 'yes'
 }
 
 
@@ -260,17 +263,26 @@ const displayLastFivesSearches = function () {
     const lastFiveSearches = getLastFiveSearches()
 
     lastFiveSearches.forEach(function (last) {
-        const label = document.createElement('label')
-        label.textContent = `.${last}  `
+        const button = document.createElement('Button')
+        button.textContent = last
 
-        label.addEventListener('click', function (e) {
+        button.addEventListener('click', function (e) {
             meteoRequest(last)
         })
 
-        lastFiveOutput.appendChild(label)
+        lastFiveOutput.appendChild(button)
         
     })
 }
+
+const saveGoodCityName = async function(cityName) {
+    const save = await meteoRequest(cityName)
+    if(save === 'yes'){
+        addAnSearche(cityName)
+        displayLastFivesSearches()
+    }
+}
+
 verifyWeatherInfo()
 displayLastFivesSearches()
 
@@ -278,9 +290,7 @@ document.querySelector('#entry-form').addEventListener('submit', function (e) {
     e.preventDefault()
     const cityName = e.target.cityName.value.trim()
     if (cityName !== ''){
-        addAnSearche(cityName)
-        displayLastFivesSearches()
-        meteoRequest(cityName)
+        saveGoodCityName(cityName)
         e.target.cityName.value = ''
     }else {
         errorMessage(`Please enter a valid city name like \'paris\' or \'new york\'`)

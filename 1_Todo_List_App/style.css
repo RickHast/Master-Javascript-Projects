@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #001011;
+    /*
+    background: #536976;
+    background: linear-gradient(
+        to right,
+        #536976,#292E49
+    );
+    */
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3AAFB9;
+    gap: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    background-color: #093A3E;
+    width: 94%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#todo-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid;
+}
+
+#todo-form input{
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+#todo-form button{
+    font-size: 20px;
+    height: 50px;
+    padding: 2%;
+}
+
+#popup{
+    background-color: #093A3E;
+    padding: 2%;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: #3AAFB9 -4px 4px;
+}
+
+button {
+    background-color:  rgb(37, 197, 233);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select{
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 120px;
+}
+
+
+div{
+    padding: 2%;
+}
+
+label{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#todos-container{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-wrap: break-word;
+}
+
+#todos-container h2{
+    font-size: 30px;
+}
+
+#todos-container h3{
+    font-size: 25px;
+}
+

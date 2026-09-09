@@ -4,21 +4,67 @@
 }
 
 body{
-    background: #1F1C2C;
-    background: linear-gradient(
-        to right,
-        #1F1C2C,#928DAB
-    );
+    background-color: rgb(4, 6, 7);
+    color: rgb(227, 217, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    gap: 30px;
+}
+
+#header {
+    width: 100%;
+    background-color: rgb(91, 42, 98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#entry-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(91, 42, 98);
+    padding: 20px;
+    justify-content: space-around;
+    gap: 30px;
+    border-radius: 20px;
+    box-shadow: rgb(191, 64, 250) -4px -4px;
 }
 
 input{
     padding: 1%;
     font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(red, green, blue);
 }
 
 button {
     margin-top: 1%;
     font-size: 25px;
+    color: rgb(227, 217, 252);
+    background-color: rgb(73, 40, 194);
+    border-radius: 10px;
+}
+
+#last-five-output{
+    background-color: rgb(91, 42, 98);
+    width: 50%;
+    display: inline-block;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgb(191, 64, 250) 4px 4px;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -33,4 +79,9 @@ button {
     font-size: 30px;
     padding: 1%;
     margin: 1%;
+}
+
+#weather-info-output{
+    color: rgb(4, 6, 7);
+    border-radius: 20px;
 }

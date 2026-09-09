@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Tool</title>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Welcome User in my Project 3</h1>
+        <p>click on a radio to user the password Generator Or The Password Tester</p>
+    </div>
+    
+    <div id="options">
+        <div id="first-option">
+            <label for="geneOrVerifyPasss">Generate a Password: 
+                <input type="radio" name="geneOrVerifyPass" id="gene-pass-input">
+            </label>
+        </div>
+
+        <div id="second-option">
+            <label for="geneOrVerifyPass">Test a Password Security: 
+                <input type="radio" name="geneOrVerifyPass" id="verify-pass-input">
+            </label>
+        </div>
+    </div>
+
+
+    <div id="check-pass">
+        <div id="checkboxes-container"></div>
+
+        <div id="password-output"></div>
+    </div>
+
+    <div id="options-container">
+        
+    </div>
+
+    <div id="security-container"></div>
+
+    <div id="popup-overlay">
+        <div class="popup-content">
+            
+        </div>
+    </div>
+
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

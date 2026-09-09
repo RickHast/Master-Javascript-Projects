@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#popup-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 98;
+    display: none;
+}
+
+#popup-overlay.open {
+    display: block !important;
+}
+
+.popup-content{
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-content{
+    margin: 20px 0;
+}
+
+/*
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    background-color: rgba(9, 21, 64, 1);
+}
+
+#options{
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    width: 175vh;
+    font-size: 30px;
+    background-color: rgb(61, 81, 140);
+    
+}
+
+label{
+    color: rgb(171, 210, 250);
+}
+
+.appears{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(61, 81, 140);
+    padding: 3%;
+    width: 40vh;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    box-shadow: rgb(27, 44, 193) -5px 5px; 
+}
+
+.appears input{
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.appears h2{
+    font-size: 20px;
+}
+
+.appears p{
+    font-size: 20px;
+}
+
+#options-container{
+    display: flex;
+    gap: 20px;
+}
+
+#options-container input{
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#header p {
+    font-size: 25px;
+}
+
+h1, h2, p, button{
+    color: rgb(171, 210, 250);
+}
+
+#header h1{
+    font-size: 40px;
+}
+
+#check-pass{
+    display: flex;
+    gap: 50px;
+}
+
+#check-id{
+    display: flex;
+    gap: 15px;
+}
+
+button{
+    padding: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(61, 81, 140);
+}
+
+button:hover {
+    background-color: rgb(78, 100, 165);
+}
+
+.popup-content{
+    background-color: rgba(9, 21, 64, 1);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.popup-content h2{
+    font-size: 30px;
+}
+
+.popup-content p{
+    font-size: 25px;
+}
+
+

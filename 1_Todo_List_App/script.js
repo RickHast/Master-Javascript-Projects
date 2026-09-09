@@ -45,9 +45,7 @@ const h2Message = function(text, id) {
 }
 
 const underlineTodo = function(todoLabel) {
-    
-    return todoLabel.style.textDecoration = 'line-through'
-
+    todoLabel.classList.add('line-through')
 }
 
 // Principal Display function
@@ -65,6 +63,11 @@ const principalDisplay = function(todosList, todo) {
     if(todo.checkValue){
         underlineTodo(todoLabel)
     }
+
+    todoCheckbox.addEventListener('click', (e) => {
+        location.reload()
+    })
+
 
     const todoDelButton = document.createElement('button')
     todoDelButton.textContent = 'Delete'

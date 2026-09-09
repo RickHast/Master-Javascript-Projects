@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="togglePopup()">Activer le popup</button>
+
+    <div id="popup-overlay" >
+        <div class="popup-content">
+            <h2>Ceci est notre premier popup !</h2>
+            <p>Salut et bienvenue sur mon site !</p>
+            <a href="/" class="popup-link">S'inscrire</a>
+            <a href="javascript:void(0)" onclick="togglePopup()" class="popup-exit">Fermer</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

@@ -86,7 +86,7 @@ label{
 
 .appears input{
     font-size: 25px;
-    padding: 2px;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -107,6 +107,7 @@ label{
     height: 30px;
     font-size: 20px;
     border-radius: 10px;
+    padding: 5px;
 }
 
 #header{
@@ -145,6 +146,7 @@ button{
     font-size: 20px;
     border-radius: 10px;
     background-color: rgb(61, 81, 140);
+    box-shadow: rgb(171, 210, 250) 3px 3px;
 }
 
 button:hover {
@@ -167,4 +169,61 @@ button:hover {
     font-size: 25px;
 }
 
+@media (max-width: 768px){
+    #options{
+        max-width: 70vh;
+    }
+    #header h1{
+        font-size: 30px;
+    }
 
+    #header p {
+        font-size: 20px;
+    }
+
+    .appears{
+        max-width: 30vh;
+    }
+
+    .appears input{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 480px){
+    #options{
+        max-width: 45vh;
+        font-size: 20px;
+    }
+    #header h1{
+        font-size: 30px;
+    }
+
+    #header p {
+        font-size: 15px;
+    }
+
+    .appears{
+        max-width: 22vh;
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .appears input{
+        font-size: 15px;
+    }
+
+    .appears h2{
+        font-size: 20px;
+    }
+
+    .appears p{
+        font-size: 20px;
+    }
+
+    #check-pass{
+        gap: 15px;
+    }
+
+}

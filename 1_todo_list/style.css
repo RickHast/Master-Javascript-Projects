@@ -5,14 +5,7 @@
 
 body{
     background-color: #001011;
-    /*
-    background: #536976;
-    background: linear-gradient(
-        to right,
-        #536976,#292E49
-    );
-    */
-    min-width: 100vh;
+    max-width: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,3 +99,46 @@ label{
     font-size: 25px;
 }
 
+@media (max-width: 768px){
+    #popup{
+        background-color: #093A3E;
+        padding: 2%;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    h1{
+        width: 94%;
+    }
+
+    #todo-form{
+        width: 92%;
+        height: 140px;
+    }
+
+    #todo-form input{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px){
+    #popup{
+        background-color: #093A3E;
+        padding: 2%;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    h1{
+        width: 94%;
+    }
+
+    #todo-form{
+        width: 92%;
+        height: 140px;
+    }
+
+    #todo-form input{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Builder</title>
+</head>
+<body>
+
+    <header>
+        <h1>Quiz Builder</h1>
+        <p>welcome in the quiz builder, here you can build all quiz you want</p>
+    </header>
+
+    <form id="quiz-title-form">
+        <h2>Enter your quiz Name to create a new Quiz!</h2>
+        <input type="text" id="quiz-title" placeholder="Enter the quiz title here">
+        <button>Create Quiz</button>
+    </form>
+
+    <div id="create-quiz-questions" class="no-display">
+        <h2 id="h2-quiz-title"></h2>
+        <form id="create-question-form">
+            <textarea name="question-text" id="question-text" cols="50" rows="15" placeholder="Enter your question text here" required></textarea>
+            <label for="proposition1">
+                proposition1:
+                <input type="text" name="first" id="proposition1">
+                <input type="radio" name="goodAnswer" id="proposition1Radio" class="radio">
+            </label>
+
+            <label for="proposition2">
+                proposition2:
+                <input type="text" name="second" id="proposition2">
+                <input type="radio" name="goodAnswer" id="proposition2Radio" class="radio">
+            </label>
+
+            <label for="proposition3">
+                proposition3:
+                <input type="text" name="third" id="proposition3">
+                <input type="radio" name="goodAnswer" id="proposition3Radio" class="radio">
+            </label>
+
+            <label for="proposition4">
+                proposition4:
+                <input type="text" name="fourth" id="proposition4">
+                <input type="radio" name="goodAnswer" id="proposition4Radio" class="radio">
+            </label>
+
+            <button>Add this question</button>
+        </form>
+    </div>
+
+    <div id="all-quiz-div">
+        <div id="all-quiz"></div>
+    </div>
+    <div id="one-question" class="no-display">
+        <div id="one-quiz-questions"></div>
+    </div>
+
+    <script src="models.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

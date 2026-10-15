@@ -264,8 +264,6 @@ header p{
     #create-question-form input{
         padding: 1vh;
         font-size: 25px;
-        width: 3vh;
-        max-width: 30px;
     }
 
     #create-question-form button{

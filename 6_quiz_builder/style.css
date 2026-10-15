@@ -251,31 +251,6 @@ header p{
         font-size: 2vh;
     }
 
-    #quiz-title-form  button{
-        padding: 1vh;
-        font-size: 25px;
-    }
-
-    #create-question-form textarea{
-        padding: 1vh;
-        font-size: 25px;
-    }
-
-    #create-question-form input{
-        padding: 1vh;
-        font-size: 25px;
-    }
-
-    #create-question-form button{
-        padding: 1vh;
-        font-size: 25px;
-    }
-
-    #create-question-form label{
-        padding: 1vh;
-        font-size: 25px;
-        gap: 20px;
-    }
     body {
         max-width: 100vh;
     }

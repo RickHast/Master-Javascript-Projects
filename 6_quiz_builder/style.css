@@ -239,6 +239,25 @@ header p{
 
 @media (max-width: 480px){
     header {
-        min-width: 85%;
+        min-width: 80%;
+    }
+
+    #quiz-title-form  input{
+        padding: 1vh;
+        font-size: 2vh;
+    }
+
+    #quiz-title-form  h2{
+        font-size: 2vh;
+    }
+
+    #quiz-title-form  button{
+        padding: 1vh;
+        font-size: 2vh;
+    }
+
+    #create-question-form textarea{
+        padding: 1vh;
+        font-size: 1vh;
     }
 }

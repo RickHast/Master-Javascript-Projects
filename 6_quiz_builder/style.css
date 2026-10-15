@@ -264,6 +264,7 @@ header p{
     #create-question-form input{
         padding: 1vh;
         font-size: 25px;
+        max-width: 3vh;
     }
 
     #create-question-form button{
@@ -273,6 +274,7 @@ header p{
 
     #create-question-form label{
         padding: 1vh;
+        display: flex;
         flex-direction: column;
         font-size: 25px;
         gap: 20px;

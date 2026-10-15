@@ -275,6 +275,7 @@ header p{
         padding: 1vh;
         font-size: 25px;
         gap: 20px;
+        max-width: 100%;
     }
     body {
         max-width: 100vh;

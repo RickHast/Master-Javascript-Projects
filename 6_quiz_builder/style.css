@@ -275,8 +275,7 @@ header p{
     #create-question-form label{
         padding: 1vh;
         display: flex;
-        
-        justify-content: center;
+        justify-content: flex-start;
         font-size: 25px;
         gap: 20px;
         max-width: 100%;

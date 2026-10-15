@@ -277,6 +277,7 @@ header p{
         padding: 1vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         font-size: 25px;
         gap: 20px;
         max-width: 100%;
